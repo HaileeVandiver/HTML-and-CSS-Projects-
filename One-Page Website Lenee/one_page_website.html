@@ -3,30 +3,28 @@
 	<head>
 		<meta charset="utf-8"> 
 		<title>Lenee</title>
+		<link rel="stylesheet" href="./css/one_page_website.css"> 
+		<link rel="stylesheet" href="./css/animations.css"
 	</head> 
-	<body>
-	<!--Header--> 
-	<div class="header">
-		<h1>Lenee</h1>
-		<p>Singer, Songwriter, Actress</p>
-	</div>
 	<!--Nav--> 
-	<div>
-		<div> 
-			<ul> 
-				<a href="#home" id="link"><li>Home</li></a> 
-				<a href="#gallery"><li>About</li></a> 
-				<a href="#contact"><li>Gallery</li></a> 
-			</ul>  
-		</div> 
-	</div> 
+	<body> 
+		<!-- NAV-->
+		<div class="wrap">
+			<div class="menu-container"> 
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
+				</ul>
+			</div>
+		</div>
 	<!--END NAV--> 
 	
 	<!--HOME--> 
 	<div id="home"> 
-		<div> 
-			<div> 
-				<span> Lenee: Actress, Singer, Songwriter</span> 
+		<div class="container"> 
+			<div class="text-center"> 
+				<span class="head-main"> Lenee: Actress, Singer, Songwriter</span> 
 			</div> 
 		</div> 
 	</div> 
@@ -88,33 +86,34 @@
 	<!--END GALLERY-->
 	
 	<!--RSVP--> 
-	<section> 
-		<div id="contact"> 
-			<div> 
-				<h1>Reservations</h1> 
-				<div>
-					<h2><span> Book Today</span> 
-					</h2> 
-					<p> 
-						Please proivide us with your basic contact information. 
-					</p> 
-					<div>
-						<form action="" method="post"> 
-							<input class="rsvp" type="text" value="First Name">
-							<input class="rsvp" type="text" value="Last Name">
-							<input class="rsvp" type="text" value="Email Address">
-							<input class="rsvp" type="text" value="Phone Number
+	<div id="contact">
+		<div class="container">
+			<div class="heading-padding">
+				<h1 class="reservation">Reservations</h1>
+				<div class="reservation">
+					<h2><span>Book Lenee for your event today!</span>
+					</h2>
+					<p class="rsvp-text">
+						Please provide us with your basic contact information.
+					</p>
+					<div class="form-rsvp">
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="" placeholder="First Name">
+							<input class="rsvp" type="text" value="" placeholder="Last Name">
+							<input class="rsvp" type="text" value="" placeholder="Email Address">
+							<input class="rsvp" type="text" value="" placeholder="Phone Number">
 							<div class="form-spacer">
-								<label class="terms">Terms and Conditions</label> 
-							</div> 
-							<div> 
-								<input type="submit" value="Submit"> 
-							</div> 
-						</form> 
-					</div> 
-				</div> 
-			</div> 
-	</section>
+								<label class="terms">Terms and Conditions</label>
+							</div>
+							<div class="submit">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--END RSVP-->
 	
 	<!--FOOTER-->
