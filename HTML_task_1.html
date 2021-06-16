@@ -1,6 +1,37 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <title> My First HTML Page </title>
-	<p> "Hello, World!" </p> 
+	<body>
+		<script> 
+			document.body.classList.add('fade-out');
+		</script>
+		
+		<p style="font-size: 2vw;"> "Hello, World!" This text should resize when the browser size is changed.</p>
+	
+		<script> 
+		window.addEventListener('DOMContentLoaded', () => {
+		document.body.classList.remove('fade-out');
+});
+		</script>
+<style>
+	body { 
+		opacity: 1; 
+		transition: 1s opacity; 
+	}
 
+	body.fade-out {
+		opacity: 0; 
+		transition: none; 
+	}
+
+	html {
+		background-color: pink;
+	}
+
+	
+</style>
+
+	
+
+	</body> 
 </html> 
